@@ -5,14 +5,11 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-requires-python = ">=3.10"
 name = "Casestudy_Leroy_Ee"
 version = "0.1.0"
 authors = [
     {name = "Leroy Ee Bing Yao", email = "leroyeby@gmail.com"},
 ]
-readme = "README.md"
-license = {text = "MIT"}
 dynamic = [
     "version",
 ]
@@ -21,12 +18,18 @@ dependencies = [
     "jupyterlab>=3.0",
     "notebook",
     "kedro>=1.1.1",
+    "pandas>=2.3.3",
+    "python-dotenv>=1.2.1",
+    "openpyxl>=3.1.5",
+    "matplotlib>=3.10.7",
+    "google-genai>=1.52.0",
 ]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
 
 [project.scripts]
 casestudy-leroy-ee = "casestudy_leroy_ee.__main__:main"
-
-[project.entry-points."kedro.hooks"]
 
 [project.optional-dependencies]
 dev = [
